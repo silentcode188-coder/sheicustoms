@@ -1,0 +1,112 @@
+<index.html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shei Customs | Personalizando tus mejores momentos</title>
+    
+    <!-- Fuentes (Montserrat y Dancing Script) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Iconos FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+    <!-- Conexión al archivo de diseño (CSS) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Barra superior de anuncio -->
+    <div class="top-bar">
+        <p>💖 Personalizamos tus mejores momentos con amor</p>
+    </div>
+
+    <!-- Navegación Principal -->
+    <header class="navbar">
+        <div class="logo-nav">
+            <!-- Recuerda tener tu logo en la misma carpeta -->
+            <img src="Image_20260721_95954_143 AM.webp" alt="Shei Customs Logo" class="nav-logo-img">
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="#inicio" class="active">Inicio</a></li>
+            <li><a href="#catalogo">Catálogo</a></li>
+            <li><a href="#nosotros">Sobre nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+
+        <div class="nav-icons">
+            <a href="#" class="icon-link pink-icon"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/17872033018" class="icon-link"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" class="icon-link cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-badge">0</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Sección Principal -->
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-text">
+                <h1>Personalizamos <br><span class="script-text">tus mejores momentos</span></h1>
+                <p>Sublimación en T-Shirts, tumblers, tazas, gorras, llaveros y más, con diseños únicos para regalos, negocios y toda ocasión.</p>
+                
+                <div class="hero-buttons">
+                    <a href="#catalogo" class="btn btn-solid"><i class="fa-solid fa-bag-shopping"></i> Ver catálogo</a>
+                    <a href="https://wa.me/17872033018" class="btn btn-outline" target="_blank"><i class="fa-brands fa-whatsapp"></i> Escríbenos por WhatsApp</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="Image_20260721_95954_143 AM.webp" alt="Shei Customs Diseño Grande">
+            </div>
+        </section>
+
+        <!-- Barra de Beneficios (Gris) -->
+        <section class="features-wrapper">
+            <div class="features-bar">
+                <div class="feature-item">
+                    <i class="fa-solid fa-award"></i>
+                    <div>
+                        <h4>Calidad Premium</h4>
+                        <p>Usamos los mejores materiales</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <div>
+                        <h4>Envíos a Puerto Rico</h4>
+                        <p>Rápidos y seguros</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-regular fa-heart"></i>
+                    <div>
+                        <h4>Hecho con amor</h4>
+                        <p>Cada detalle cuenta</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-lock"></i>
+                    <div>
+                        <h4>Compra segura</h4>
+                        <p>Tus datos protegidos</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Botones Flotantes Inferiores -->
+    <a href="https://wa.me/17872033018" class="floating-wa" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp
+    </a>
+    
+    <a href="#" class="floating-ig" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+
+</body>
+</html>
