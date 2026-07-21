@@ -32,19 +32,31 @@ body {
 
 /* Navegación */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 6%;
-    background-color: var(--bg-white);
-    box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+    display: flex; /* Alinea los elementos en fila */
+    justify-content: space-between; /* Logo a la izquierda, links a la derecha */
+    align-items: center; /* Centra todo verticalmente */
+    padding: 15px 40px; /* Espacio interno de la barra */
+    background-color: #ffffff; /* Color de fondo */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Sombrita suave abajo */
 }
 
-.nav-logo-img { height: 70px; object-fit: contain; }
+.nav-logo-img {
+    width: 250px !important;
+    max-width: 100% !important; /* Protege que no se desborde en pantallas mínimas */
+    height: auto;
 
 .nav-links { list-style: none; display: flex; gap: 35px; }
-.nav-links a { text-decoration: none; color: var(--text-dark); font-weight: 600; font-size: 15px; }
-.nav-links a:hover, .nav-links a.active { color: var(--pink-brand); }
+.nav-links a {
+    text-decoration: none; /* Quita el subrayado */
+    color: #333333;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+    color: #ff4d79; 
+}
 
 .nav-icons { display: flex; gap: 20px; font-size: 22px; }
 .icon-link { color: var(--text-dark); text-decoration: none; }
@@ -90,4 +102,50 @@ body {
     position: fixed; bottom: 30px; right: 30px;
     background: linear-gradient(45deg, #f09433, #dc2743, #bc1888); color: white;
     width: 55px; height: 55px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 28px; text-decoration: none;
+}
+    /* ----------------------------------- */
+/* 1. TUS ESTILOS NORMALES (COMPUTADORA) */
+/* ----------------------------------- */
+
+.navbar {
+    display: flex;
+    /* ... tus otras reglas ... */
+}
+
+.nav-logo-img {
+    width: 250px !important;
+    /* ... tus otras reglas ... */
+}
+
+/* (Cualquier otra regla que tengas en tu página) */
+
+
+/* ----------------------------------- */
+/* 2. TU CÓDIGO PARA CELULARES (¡AL FINAL!) */
+/* ----------------------------------- */
+
+@media (max-width: 768px) {
+    /* Cambiamos la barra para que se apile hacia abajo */
+    .navbar {
+        flex-direction: column; /* Pone el logo arriba y los textos abajo */
+        padding: 15px 20px;
+        text-align: center;
+    }
+
+    /* Achicamos un poquito el logo para que no ocupe toda la pantalla del cel */
+    .nav-logo-img {
+        width: 180px !important;
+        margin-bottom: 15px; /* Da espacio entre el logo y los botones */
+    }
+
+    /* Acomodamos los textos en el centro y permitimos que bajen de línea si no caben */
+    .nav-links {
+        flex-wrap: wrap; 
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .nav-links a {
+        font-size: 14px; /* Textos un pelín más pequeños en celular */
+    }
 }
