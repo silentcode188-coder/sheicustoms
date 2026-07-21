@@ -92,6 +92,6 @@ body {
     width: 55px; height: 55px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 28px; text-decoration: none;
 }
 .nav-logo-img {
-    width: 250px !important;
-    max-width: 250px !important;
+    width: 350px !important;
+    max-width: 350px !important;
 }
