@@ -91,3 +91,7 @@ body {
     background: linear-gradient(45deg, #f09433, #dc2743, #bc1888); color: white;
     width: 55px; height: 55px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 28px; text-decoration: none;
 }
+.nav-logo-img {
+    width: 250px !important;
+    max-width: 250px !important;
+}
