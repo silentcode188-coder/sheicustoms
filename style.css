@@ -170,3 +170,94 @@ body {
     font-weight: 600;
     letter-spacing: 0.5px;
 }
+/* ==========================================
+   DISEÑO RESPONSIVO (Móviles y Tablets)
+   ========================================== */
+
+@media (max-width: 768px) {
+    /* 1. Navegación: apilamos el logo, los enlaces y los íconos */
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+    }
+    
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* 2. Hero (Inicio): pasamos de lado-a-lado a arriba-abajo */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+        gap: 30px;
+    }
+
+    /* Reducimos el tamaño de la fuente para que no se desborde en pantallas pequeñas */
+    .hero-text h1 {
+        font-size: 2.2rem; 
+    }
+
+    .hero-text .script-text {
+        font-size: 3.2rem;
+    }
+
+    /* Los botones ocupan el 100% del ancho para ser fáciles de tocar */
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .btn {
+        justify-content: center;
+        width: 100%;
+    }
+
+    /* 3. Beneficios: en lugar de estar en fila, los apilamos en columna */
+    .features-wrapper {
+        padding: 0 20px;
+    }
+
+    .features-bar {
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .feature-item {
+        flex-direction: column; /* El ícono queda arriba del texto */
+    }
+
+    /* 4. Sobre Nosotros: Ajustamos espacios y fuentes */
+    .about-text {
+        padding: 30px 20px;
+    }
+
+    .about-text h2 {
+        font-size: 28px;
+    }
+
+    .about-text h2 span {
+        font-size: 38px;
+    }
+
+    /* 5. Botones Flotantes: Los hacemos un poco más pequeños para no estorbar la lectura */
+    .floating-wa {
+        bottom: 20px;
+        left: 20px;
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .floating-ig {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+        font-size: 22px;
+    }
+}
