@@ -173,7 +173,69 @@ body {
 /* ==========================================
    DISEÑO RESPONSIVO (Móviles y Tablets)
    ========================================== */
+/* ==========================================
+   SECCIÓN CATÁLOGO
+   ========================================== */
+.catalog-section {
+    padding: 60px 6%;
+    background-color: var(--bg-white);
+    text-align: center;
+}
 
+.catalog-section h2 {
+    font-size: 38px;
+    color: var(--text-dark);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.catalog-section h2 span {
+    color: var(--pink-brand);
+    font-family: 'Dancing Script', cursive;
+    font-size: 48px;
+}
+
+.catalog-subtitle {
+    color: var(--text-gray);
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+/* El uso de auto-fit hace que sea 100% responsivo sin necesidad de media queries extra */
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.catalog-card {
+    background-color: var(--bg-gray);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto de elevación al pasar el mouse por encima */
+.catalog-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(255, 42, 112, 0.15);
+}
+
+.catalog-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; /* Asegura que todas las fotos se recorten de manera uniforme y elegante */
+    border-bottom: 3px solid var(--pink-brand);
+}
+
+.catalog-card h3 {
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-dark);
+}
 @media (max-width: 768px) {
     /* 1. Navegación: apilamos el logo, los enlaces y los íconos */
     .navbar {
