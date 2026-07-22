@@ -91,3 +91,58 @@ body {
     background: linear-gradient(45deg, #f09433, #dc2743, #bc1888); color: white;
     width: 55px; height: 55px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 28px; text-decoration: none;
 }
+
+/* Sección Sobre Nosotros */
+.about-section { 
+    background-color: var(--pink-light); 
+    padding: 80px 20px; 
+    border-top: 1px solid rgba(255, 42, 112, 0.15); 
+}
+
+.about-container { 
+    max-width: 1000px; 
+    margin: 0 auto; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 40px; 
+}
+
+.about-text { 
+    background: var(--bg-white); 
+    border: 2px solid var(--pink-brand); 
+    border-radius: 20px; 
+    padding: 45px 30px; 
+    box-shadow: 0 10px 25px rgba(255, 42, 112, 0.15); 
+    text-align: center;
+}
+
+.about-text h2 { 
+    font-size: 38px; 
+    margin-bottom: 25px; 
+    color: var(--text-dark);
+    font-weight: 700;
+}
+
+.about-text h2 span { 
+    color: var(--pink-brand); 
+    font-family: 'Dancing Script', cursive;
+    font-size: 48px;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.about-text p { 
+    font-size: 18px; 
+    line-height: 1.8; 
+    color: var(--text-gray); 
+    margin-bottom: 20px; 
+    text-align: center; 
+}
+
+.about-text p strong {
+    color: var(--pink-brand);
+}
+
+.about-text p:last-child {
+    margin-bottom: 0;
+}
