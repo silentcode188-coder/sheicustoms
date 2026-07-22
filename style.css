@@ -146,3 +146,27 @@ body {
 .about-text p:last-child {
     margin-bottom: 0;
 }
+/* ==========================================
+   PIE DE PÁGINA (FOOTER)
+   ========================================== */
+.main-footer {
+    background-color: var(--pink-light);
+    text-align: center;
+    padding: 30px 20px;
+    border-top: 1px solid rgba(255, 42, 112, 0.2);
+    margin-top: 60px;
+}
+
+.main-footer p {
+    font-size: 14px;
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+.main-footer .footer-url {
+    font-size: 13px;
+    margin-top: 8px;
+    color: var(--pink-brand);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
