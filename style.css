@@ -346,7 +346,9 @@ body {
 }
 
 /* Colores del botón (Estilo sólido) */
-.btn-solid {
+.btn-solid, .btn-insta {
+    /* Aquí van tus colores de fondo, letras, etc. */
+}
     background-color: #E1306C; /* Color estilo Instagram. Puedes cambiarlo a negro (#000000) si prefieres */
     color: #ffffff; /* Letra blanca */
     border: 2px solid transparent;
