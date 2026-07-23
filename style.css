@@ -345,17 +345,15 @@ body {
     cursor: pointer;
 }
 
-/* Colores del botón (Estilo sólido) */
+/* Colores del botón (Estilo sólido e Instagram) */
 .btn-solid, .btn-insta {
-    /* Aquí van tus colores de fondo, letras, etc. */
-}
     background-color: #E1306C; /* Color estilo Instagram. Puedes cambiarlo a negro (#000000) si prefieres */
     color: #ffffff; /* Letra blanca */
     border: 2px solid transparent;
 }
 
 /* Efecto al pasar el mouse por encima (Hover) */
-.btn-solid:hover {
+.btn-solid:hover, .btn-insta:hover {
     background-color: #C13584; /* Se pone un poco más oscuro */
     transform: translateY(-2px); /* El botón "salta" un poquito hacia arriba */
 }
