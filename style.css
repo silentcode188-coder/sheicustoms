@@ -323,3 +323,43 @@ body {
         font-size: 22px;
     }
 }
+/* Contenedor: Centra el botón en la pantalla */
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Estilo general del botón */
+.btn {
+    display: inline-flex; /* Alinea el ícono y el texto perfectamente */
+    align-items: center;
+    padding: 12px 28px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none; /* Elimina la línea azul debajo del enlace */
+    border-radius: 8px; /* Hace las esquinas redondeadas */
+    transition: all 0.3s ease; /* Hace que la animación al pasar el mouse sea suave */
+    cursor: pointer;
+}
+
+/* Colores del botón (Estilo sólido) */
+.btn-solid {
+    background-color: #E1306C; /* Color estilo Instagram. Puedes cambiarlo a negro (#000000) si prefieres */
+    color: #ffffff; /* Letra blanca */
+    border: 2px solid transparent;
+}
+
+/* Efecto al pasar el mouse por encima (Hover) */
+.btn-solid:hover {
+    background-color: #C13584; /* Se pone un poco más oscuro */
+    transform: translateY(-2px); /* El botón "salta" un poquito hacia arriba */
+}
+
+/* Espacio entre la bolsita y las palabras "Ver catálogo" */
+.btn i {
+    margin-right: 8px;
+    font-size: 18px;
+}
