@@ -1,184 +1,23 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shei Customs | Personalizando tus mejores momentos</title>
-    
-    <!-- PWA Manifest -->
-    <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#ff2a70">
-    
-    <!-- Fuentes (Montserrat y Dancing Script) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Iconos FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    
-    <!-- Hoja de estilos -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <!-- Barra superior de anuncio -->
-    <div class="top-bar">
-        <p>💖 Personalizamos tus mejores momentos con amor</p>
-    </div>
-
-    <!-- Navegación Principal -->
-    <header class="navbar">
-        <div class="logo-nav">
-            <!-- Usa tu logo real aquí -->
-            <img src="Image_20260721_95954_143 AM.webp" alt="Shei Customs Logo" class="nav-logo-img">
-        </div>
-        
-        <ul class="nav-links">
-            <li><a href="#inicio" class="active">Inicio</a></li>
-            <li><a href="#catalogo">Catálogo</a></li>
-            <li><a href="#nosotros">Sobre nosotros</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-
-        <div class="nav-icons">
-            <a href="#" class="icon-link pink-icon"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://wa.me/17872033018" class="icon-link"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="#" class="icon-link cart-icon">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <span class="cart-badge">0</span>
-            </a>
-        </div>
-    </header>
-
-    <!-- Sección Principal (Hero) -->
-    <main>
-        <section id="inicio" class="hero">
-            <div class="hero-text">
-                <h1>Personalizamos <br><span class="script-text">tus mejores momentos</span></h1>
-                <p>Sublimación en T-Shirts, tumblers, tazas, gorras, llaveros y más, con diseños únicos para regalos, negocios y toda ocasión.</p>
-                
-                <div class="hero-buttons">
-                    <a href="#catalogo" class="btn btn-solid"><i class="fa-solid fa-bag-shopping"></i> Ver catálogo</a>
-                    <a href="https://wa.me/17872033018" class="btn btn-outline" target="_blank"><i class="fa-brands fa-whatsapp"></i> Escríbenos por WhatsApp</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <!-- Usa tu logo grande real aquí -->
-                <img src="Image_20260721_95954_143 AM.webp" alt="Shei Customs Diseño Grande">
-            </div>
-        </section>
-
-        <!-- Barra de Beneficios (Gris) -->
-        <section class="features-wrapper">
-            <div class="features-bar">
-                <div class="feature-item">
-                    <i class="fa-solid fa-award"></i>
-                    <div>
-                        <h4>Calidad Premium</h4>
-                        <p>Usamos los mejores materiales</p>
-                    </div>
-                </div>
-                <div class="feature-item">
-                    <i class="fa-solid fa-truck-fast"></i>
-                    <div>
-                        <h4>Envíos a Puerto Rico</h4>
-                        <p>Rápidos y seguros</p>
-                    </div>
-                </div>
-                <div class="feature-item">
-                    <i class="fa-regular fa-heart"></i>
-                    <div>
-                        <h4>Hecho con amor</h4>
-                        <p>Cada detalle cuenta</p>
-                    </div>
-                </div>
-                <div class="feature-item">
-                    <i class="fa-solid fa-lock"></i>
-                    <div>
-                        <h4>Compra segura</h4>
-                        <p>Tus datos protegidos</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sección de Catálogo -->
-        <section id="catalogo" class="catalog-section">
-            <div class="catalog-header">
-                <h2>Explora nuestro catálogo</h2>
-                <a href="#" class="btn-small">Ver todo el catálogo &rarr;</a>
-            </div>
-            
-            <div class="catalog-grid">
-                <!-- Tarjeta 1 -->
-                <div class="catalog-card">
-                    <div class="card-img-placeholder">
-                        <img src="images/tshirts.jpg" alt="T-Shirts" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="fallback-icon" style="display: none;"><i class="fa-solid fa-shirt"></i></div>
-                    </div>
-                    <h4>T-Shirts</h4>
-                </div>
-                <!-- Tarjeta 2 -->
-                <div class="catalog-card">
-                    <div class="card-img-placeholder">
-                        <img src="images/tumblers.jpg" alt="Tumblers" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="fallback-icon" style="display: none;"><i class="fa-solid fa-mug-hot"></i></div>
-                    </div>
-                    <h4>Tumblers</h4>
-                </div>
-                <!-- Tarjeta 3 -->
-                <div class="catalog-card">
-                    <div class="card-img-placeholder">
-                        <img src="images/tazas.jpg" alt="Tazas" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="fallback-icon" style="display: none;"><i class="fa-solid fa-mug-saucer"></i></div>
-                    </div>
-                    <h4>Tazas</h4>
-                </div>
-                <!-- Tarjeta 4 -->
-                <div class="catalog-card">
-                    <div class="card-img-placeholder">
-                        <img src="images/gorras.jpg" alt="Gorras" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="fallback-icon" style="display: none;"><i class="fa-brands fa-redhat"></i></div>
-                    </div>
-                    <h4>Gorras</h4>
-                </div>
-                <!-- Tarjeta 5 -->
-                <div class="catalog-card">
-                    <div class="card-img-placeholder">
-                        <img src="images/llaveros.jpg" alt="Llaveros" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="fallback-icon" style="display: none;"><i class="fa-solid fa-key"></i></div>
-                    </div>
-                    <h4>Llaveros</h4>
-                </div>
-                <!-- Tarjeta 6 -->
-                <div class="catalog-card">
-                    <div class="card-img-placeholder">
-                        <img src="images/ymas.jpg" alt="Y más" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="fallback-icon" style="display: none;"><i class="fa-solid fa-plus"></i></div>
-                    </div>
-                    <h4>Y más</h4>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Botones Flotantes Inferiores -->
-    <a href="https://wa.me/17872033018" class="floating-wa" target="_blank">
-        <i class="fa-brands fa-whatsapp"></i> WhatsApp
-    </a>
-    
-    <a href="#" class="floating-ig" target="_blank">
-        <i class="fa-brands fa-instagram"></i>
-    </a>
-
-    <!-- Script para instalar PWA (Opcional) -->
-    <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('./sw.js');
-            });
-        }
-    </script>
-</body>
-</html>
+{
+  "name": "Shei Customs",
+  "short_name": "SheiCustoms",
+  "description": "Personalizando tus mejores momentos con amor. Diseños únicos, tazas y sublimación.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#E23A6D",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
