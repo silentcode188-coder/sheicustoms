@@ -1,4 +1,4 @@
-const CACHE_NAME = 'sheicustoms-v1';
+const CACHE_NAME = 'sheicustoms-v2';
 
 // Recursos esenciales que se guardarán para uso offline
 const urlsToCache = [
